@@ -56,14 +56,20 @@ poetry install
 
 Execute os notebooks na pasta notebooks/ em ordem numérica (01 a 08) para reproduzir todas as etapas da análise.
 
-Resultados
-Agrupamento de pacientes com base nos sumários de alta (5 clusters clínicos identificados)
+---
 
-Extração de entidades médicas com SciSpacy
+## 📈 Principais Resultados
 
-Modelo de regressão logística com embeddings BERT alcançando boa performance (AUC, sensibilidade, matriz de confusão)
+- Foram identificados **5 clusters clínicos distintos** a partir dos sumários de alta hospitalar.
+- O modelo de regressão logística com embeddings BERT obteve **boa sensibilidade para previsão de mortalidade hospitalar**.
+- A análise temporal dos óbitos pós-alta indicou que a maioria dos eventos fatais ocorre nos primeiros dias após a alta.
 
-Análise temporal de óbitos pós-alta revelando padrões críticos de risco
+### Visualizações:
+
+<p align="center">
+  <img src="notebooks/figures/cluster_distribution.png" width="400"/>
+  <img src="notebooks/figures/matriz_confusao_mortalidade.png" width="400"/>
+</p>
 
 
 Este projeto é de uso educacional e acadêmico. Os dados são de acesso público, respeitando os termos de uso do MIMIC-III e do Kaggle.
