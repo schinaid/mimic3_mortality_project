@@ -16,40 +16,8 @@ Este repositório apresenta um pipeline completo de ciência de dados para anál
 
 ## 📁 Estrutura do Projeto
 
-mimic3_mortality/
+![Estrutura do projeti](./notebooks/figures/estrutura-mimic.png)
 
-├── data/ # Dados brutos do MIMIC-III
-│ └── Mimic-3_patients/
-│ ├── ADMISSIONS/ # Admissões hospitalares
-│ ├── NOTEEVENTS/ # Notas clínicas
-│ ├── LABEVENTS/ # Dados laboratoriais
-│ └── ... # Demais tabelas do MIMIC-III
-│
-├── notebooks/ # Notebooks de análise e modelagem
-│ ├── 01_visualizacao_geral.ipynb
-│ ├── 02_extracao_notas_clinicas.ipynb
-│ ├── 03_nlp_scispacy_entidades.ipynb
-│ ├── 04_clusterizacao_notas.ipynb
-│ ├── 05_mortalidade_texto_modelo.ipynb
-│ ├── 06_clinicalbert_classificacao.ipynb
-│ ├── 07_analise_temporal_notas.ipynb
-│ ├── 08_integracao_labs_notas.ipynb
-│ └── figures/ # Visualizações geradas
-│ └── *.png
-│
-├── models/ # Modelos treinados e vetorizadores
-│ ├── bert-base-uncased/
-│ ├── discharge_summaries_labeled.csv
-│ └── *.pkl
-│
-├── processed/ # Dados prontos para modelagem
-│ └── *.csv
-│
-├── mimic3_mortality/ # Módulos do projeto
-├── tests/ # Testes de unidade
-├── pyproject.toml # Dependências com Poetry
-├── poetry.lock # Lockfile do ambiente
-└── README.md 
 
 
 ---
